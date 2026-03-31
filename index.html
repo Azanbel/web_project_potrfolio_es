@@ -4,21 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Mariana Hernández</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <h1>Mariana</h1>
-        <h1>Hernández</h1>
+    <header class="header__cv">
+      <section class="header__cv-intro">
+        <div class="header__cv-titles" >
+        <h1 class="header__cv-title">Mariana Hernández</h1>
+        <h6 class="header__cv-subtitle">
+          Desarrolladora Full-Stack Junior | TypeScript, React, Node.js
+        </h6>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
+      <div class="header__cv-image">
+        <img
+          src="./images/Rectangle 1.png"
+          alt="Foto de Mariana Hernández"
+          class="header__cv-foto"
+        />
+      </div>
+      <div class="header__cv-description">
+        <p class="header__cv-text">
+          Desarrolladora web junior con experiencia práctica creando interfaces
+          limpias y responsivas con HTML, CSS, JavaScript y React, así como
+          implementando lógica básica de back-end. Ha trabajado en proyectos
+          formativos que siguen procesos reales de desarrollo, usando Git,
+          GitHub y Figma. Disfruta colaborar en equipo, mantener un código claro
+          y resolver problemas de forma estructurada. Motivada por seguir
+          aprendiendo, asumir nuevos retos y aprovechar oportunidades para
+          crecer como desarrolladora.
+        </p>
+        <nav class="header__cv-nav">
+          <ul class="header__cv-nav-list">
+            <li><a href="#CV" class="header__cv-nav-item">Descargar CV</a></li>
+            <li>
+              <a href="#GIT" class="header__cv-nav-item">Enlace a GitHub</a>
+            </li>
+            <li><a href="#contact" class="header__cv-nav-item">Hablemos</a></li>
+          </ul>
+        </nav>
+        <div class="header__cv-circle"></div>
+      </div>
+      </section>
+
+      
+      <p class="header__skills-title">Habilidades y herramientas</p>
+      <div class="header__cv-skills">
+        <div class="header__cv-skill">
+          <img
+            src="./images/html.png"
+            alt="Ícono de HTML"
+            class="header__cv-skill-icon"
+          />
+        </div>
+        <div class="header__cv-skill">
+          <img
+            src="./images/css.png"
+            alt="Ícono de CSS"
+            class="header__cv-skill-icon"
+          />
+        </div>
+        <div class="header__cv-skill">
+          <img
+            src="./images/js.png"
+            alt="Ícono de JavaScript"
+            class="header__cv-skill-icon"
+          />
+        </div>
+        <div class="header__cv-skill">
+          <img
+            src="./images/git.png"
+            alt="Ícono de Git"
+            class="header__cv-skill-icon"
+          />
+        </div>
+        <div class="header__cv-skill">
+          <img
+            src="./images/github.png"
+            alt="Ícono de GitHub"
+            class="header__cv-skill-icon"
+          />
+        </div>
+        <div class="header__cv-skill">
+          <img
+            src="./images/chatgpt.png"
+            alt="Ícono de ChatGPT"
+            class="header__cv-skill-icon"
+          />
+      </div>
     </header>
 
     <main>
@@ -33,7 +105,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer id="contact">
       <p>&copy; 2026 Mi Sitio Web</p>
     </footer>
   </body>
