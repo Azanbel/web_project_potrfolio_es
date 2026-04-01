@@ -1,38 +1,67 @@
 @import url(./normalize.css);
-
+@font-face {
+  font-family: "Archivo Black";
+  src:
+    url(../fonts/ArchivoBlack-Regular.woff2) format("woff2"),
+    url(../fonts/ArchivoBlack-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url(../fonts/OpenSans-Regular.woff2) format("woff2"),
+    url(../fonts/OpenSans-Regular.woff) format("woff");
+  src:
+    url(../fonts/OpenSans-Bold.woff2) format("woff2"),
+    url(../fonts/OpenSans-Bold.woff) format("woff");
+  src:
+    url(../fonts/OpenSans-SemiBold.woff2) format("woff2"),
+    url(../fonts/OpenSans-SemiBold.woff) format("woff");
+}
 body {
   padding: 0;
   background-color: #111;
   color: #fff;
   width: 100vw;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 120px;
+  margin-right: 120px;
 }
-.header__cv {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header__cv-intro {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  align-items: start;
+  position: relative;
 }
 .header__cv-title {
   font-size: 72px;
-  font-family:
-    Archivo Black,
-    sans-serif;
+  font-family: "Archivo Black", sans-serif;
   width: 793px;
   height: 156px;
+  margin-bottom: 15px;
+  grid-column: 1;
+  grid-row: 1;
+}
+.span__accent,
+.span__subtitle {
+  display: block;
 }
 .header__cv-subtitle {
   font-size: 18px;
-  font-family:
-    Open Sans,
-    sans-serif;
   width: 790px;
   height: 25px;
+}
+.header__cv-description {
+  grid-column: 1;
+  grid-row: 2;
 }
 .header__cv-circle {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  left: -5%;
-  bottom: 20%;
+  left: 207px;
+  top: 240px;
   background: radial-gradient(circle, #6d6dff 0%, transparent 70%);
   position: absolute;
   z-index: -1;
@@ -40,10 +69,13 @@ body {
 .header__cv-foto {
   width: 387px;
   height: 500px;
-  margin-left: 120px;
+  grid-column: 2;
+  grid-row: 1 / span 2;
 }
-.header__cv-t9ext {
-  display: flex;
+.header__cv-text {
+  font-size: 18px;
+  width: 793px;
+  height: 150px;
 }
 .header__cv-nav-list {
   display: flex;
@@ -67,4 +99,72 @@ body {
   gap: 180px;
   margin-left: 120px;
   margin-right: 120px;
+}
+.main__cv-projects {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+}
+.main__cv-project1-image {
+  background-image: url(../images/portada-cafeteria.png);
+  background-size: cover;
+  background-position: center;
+  width: 590px;
+  height: 330px;
+}
+.main__cv-project1-description {
+  width: 590px;
+  height: 340px;
+  background-color: #1c1c1c;
+}
+.main__cv-project2-image {
+  background-image: url(../images/imagen-proyecto.png);
+  background-size: cover;
+  background-position: center;
+  width: 590px;
+  height: 330px;
+}
+.main__cv-project2-description {
+  width: 590px;
+  height: 340px;
+  background-color: #1c1c1c;
+}
+.footer__cv {
+  width: 100vw;
+  height: 343px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.footer__cv-title {
+  font-size: 24px;
+  font-family: "Archivo Black", sans-serif;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  align-items: center;
+}
+.footer__cv-email {
+  color: #6d6dff;
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.footer__cv-social {
+  display: flex;
+  gap: 80px;
+}
+.footer__social-link img {
+  width: 24px;
+  height: 24px;
+}
+.footer__cv-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #6d6dff 0%, transparent 70%);
+  position: absolute;
+  z-index: -1;
+  align-items: center;
 }
