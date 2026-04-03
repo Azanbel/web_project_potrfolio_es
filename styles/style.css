@@ -10,9 +10,17 @@
   src:
     url(../fonts/OpenSans-Regular.woff2) format("woff2"),
     url(../fonts/OpenSans-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: bold;
   src:
     url(../fonts/OpenSans-Bold.woff2) format("woff2"),
     url(../fonts/OpenSans-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 600;
   src:
     url(../fonts/OpenSans-SemiBold.woff2) format("woff2"),
     url(../fonts/OpenSans-SemiBold.woff) format("woff");
@@ -70,11 +78,13 @@ body {
   display: flex;
   gap: 20px;
   list-style: none;
+  text-decoration: none;
   width: calc(100% - 240px);
 }
 .header__cv-nav-link {
   color: #6d6dff;
   text-decoration: none;
+  list-style: none;
   font-weight: 600;
   padding: 10px 15px;
   opacity: 0.5;
@@ -95,6 +105,8 @@ body {
   font-family: "Archivo Black", sans-serif;
   font-size: 40px;
   margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .header__cv-skill-icon {
   width: 50px;
@@ -104,6 +116,8 @@ body {
   font-size: 40px;
   font-family: "Archivo Black", sans-serif;
   margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .main__cv-projects {
   display: flex;
@@ -112,35 +126,55 @@ body {
   align-items: center;
   justify-content: center;
 }
+.main__projects-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.main__projects-text {
+  font-size: 18px;
+}
 .main__cv-project1-image {
   background-image: url(../images/portada-cafeteria.png);
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: wrap;
+  align-items: flex-end;
+  margin-top: auto;
+  gap: 10px;
   width: 590px;
   height: 330px;
+  padding: 30px;
 }
 .main__cv-project1-logo {
   width: 40px;
   height: 40px;
-  left: 12px;
-  bottom: 10px;
+  gap: 10px;
 }
 .main__cv-project1-description {
   width: 590px;
   height: 340px;
   background-color: #1c1c1c;
+  padding: 30px;
 }
 .main__cv-project2-image {
   background-image: url(../images/imagen-proyecto.png);
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: wrap;
+  align-items: flex-end;
+  margin-top: auto;
+  gap: 10px;
   width: 590px;
   height: 330px;
+  padding: 30px;
 }
 .main__cv-project2-description {
   width: 590px;
   height: 340px;
   background-color: #1c1c1c;
+  padding: 30px;
 }
 .footer__cv {
   width: 100vw;
