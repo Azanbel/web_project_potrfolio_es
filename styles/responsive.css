@@ -1,2 +1,103 @@
-@media screen and (max-width: 762px) {
+@media screen and (max-width: 768px) {
+  .header__cv-intro {
+    gap: 20px;
+  }
+  .header__cv-person {
+    max-width: 452px;
+  }
+  .header__cv-title {
+    font-size: 58px;
+  }
+  .header__cv-image {
+    max-width: 216px;
+    margin-block-end: auto;
+  }
+  .header__cv-nav-list {
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+  .header__cv-nav-item {
+    padding: 10px 15px 10px 0;
+  }
+  .header__cv-nav-item::after {
+    left: 0;
+    width: calc(100% - 13px);
+  }
+  .main__cv-projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__cv-project1,
+  .main__cv-project2 {
+    width: 100%;
+  }
+  .main__cv-project1-image,
+  .main__cv-project2-image {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__cv-intro {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__cv-title {
+    font-size: 36px;
+    height: auto;
+  }
+  .header__cv-subtitle,
+  .header__cv-description {
+    font-size: 16px;
+  }
+  .header__cv-image {
+    max-width: 100%;
+    order: 1;
+  }
+  .header__cv-person {
+    max-width: 100%;
+    order: 2;
+  }
+  .header__cv-nav {
+    margin-top: 180px;
+  }
+  .header__cv-nav-list {
+    flex-direction: column;
+  }
+  .header__skills-title {
+    font-size: 28px;
+  }
+  .header__cv-skills {
+    justify-content: flex-start;
+    gap: 45px;
+  }
+  .header__cv-skill-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .main__cv {
+    margin-top: 50px;
+  }
+  .main__cv-title {
+    font-size: 28px;
+  }
+  .main__cv-project1-description,
+  .main__cv-project2-description {
+    padding: 20px;
+  }
+  .projects__logo {
+    max-width: 20px;
+    max-height: 20px;
+  }
+  .main__cv-projects-title {
+    font-size: 20px;
+  }
+  .main__cv-projects-description {
+    font-size: 16px;
+  }
+  .footer__cv-title {
+    font-size: 28px;
+  }
+  .footer__cv-social {
+    gap: 40px;
+  }
 }

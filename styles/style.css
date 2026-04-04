@@ -202,6 +202,7 @@ body {
 .main__cv-project1-image,
 .main__cv-project2-image {
   width: 100%;
+  padding: 10px;
 }
 .main__cv-project1-links,
 .main__cv-project2-links {
@@ -209,6 +210,10 @@ body {
   gap: 12px;
   align-self: flex-start;
   margin-top: auto;
+}
+.projects__logo {
+  max-width: 40px;
+  max-height: 40px;
 }
 .main__cv-projects-link {
   opacity: 0.5;
@@ -234,7 +239,6 @@ body {
   gap: 10px;
   max-width: 590px;
   aspect-ratio: 16 / 9;
-  padding: 30px;
 }
 .main__cv-project1-logo {
   width: 40px;
@@ -258,7 +262,6 @@ body {
   gap: 10px;
   max-width: 590px;
   aspect-ratio: 16 / 9;
-  padding: 30px;
 }
 .main__cv-project2-description {
   width: 100%;
@@ -276,7 +279,7 @@ body {
   position: relative;
 }
 .footer__cv-title {
-  font-size: 24px;
+  font-size: 40px;
   font-family: "Archivo Black", sans-serif;
   margin-bottom: 20px;
   margin-top: 100px;
