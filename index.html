@@ -5,207 +5,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Mariana Hernández</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
   </head>
   <body>
-    <header class="header__cv">
-      <section class="header__cv-intro">
-        <div class="header__cv-person">
-          <div class="header__cv-titles">
-            <h1 class="header__cv-title">
-              <span class="span__accent">Mariana</span>
-              <span class="span__subtitle">Hernández</span>
-            </h1>
+    <div class="page">
+      <header class="header__cv">
+        <section class="header__cv-intro">
+          <div class="header__cv-person">
+            <div class="header__cv-titles">
+              <h1 class="header__cv-title">
+                <span class="span__accent">Mariana</span>
+                <span class="span__subtitle">Hernández</span>
+              </h1>
 
-            <p class="header__cv-subtitle">
-              Desarrolladora Full-Stack Junior | TypeScript, React, Node.js
-            </p>
-          </div>
+              <p class="header__cv-subtitle">
+                Desarrolladora Full-Stack Junior | TypeScript, React, Node.js
+              </p>
+            </div>
 
-          <div class="header__cv-description">
-            <p class="header__cv-text">
-              Desarrolladora web junior con experiencia práctica creando
-              interfaces limpias y responsivas con HTML, CSS, JavaScript y
-              React, así como implementando lógica básica de back-end. Ha
-              trabajado en proyectos formativos que siguen procesos reales de
-              desarrollo, usando Git, GitHub y Figma. Disfruta colaborar en
-              equipo, mantener un código claro y resolver problemas de forma
-              estructurada. Motivada por seguir aprendiendo, asumir nuevos retos
-              y aprovechar oportunidades para crecer como desarrolladora.
-            </p>
+            <div class="header__cv-description">
+              <p class="header__cv-text">
+                Desarrolladora web junior con experiencia práctica creando
+                interfaces limpias y responsivas con HTML, CSS, JavaScript y
+                React, así como implementando lógica básica de back-end. Ha
+                trabajado en proyectos formativos que siguen procesos reales de
+                desarrollo, usando Git, GitHub y Figma. Disfruta colaborar en
+                equipo, mantener un código claro y resolver problemas de forma
+                estructurada. Motivada por seguir aprendiendo, asumir nuevos
+                retos y aprovechar oportunidades para crecer como
+                desarrolladora.
+              </p>
+            </div>
+            <div>
+              <nav class="header__cv-nav">
+                <ul class="header__cv-nav-list">
+                  <li>
+                    <a href="#CV" class="header__cv-nav-item"><span>Descargar CV</span></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com"
+                      target="_blank"
+                      class="header__cv-nav-item"
+                      ><span>Enlace a GitHub</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#contact" class="header__cv-nav-item"><span>Hablemos</span></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
-          <div>
-            <nav class="header__cv-nav">
-              <ul class="header__cv-nav-list">
-                <li>
-                  <a href="#CV" class="header__cv-nav-item">Descargar CV</a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com"
-                    target="_blank"
-                    class="header__cv-nav-item"
-                    >Enlace a GitHub</a
-                  >
-                </li>
-                <li>
-                  <a href="#contact" class="header__cv-nav-item">Hablemos</a>
-                </li>
-              </ul>
-            </nav>
+          <div class="header__cv-image">
+            <img
+              src="./images/Rectangle 1.png"
+              alt="Foto de Mariana Hernández"
+              class="header__cv-foto"
+            />
+            <div class="header__cv-circle"></div>
           </div>
-        </div>
-        <div class="header__cv-image">
-          <img
-            src="./images/Rectangle 1.png"
-            alt="Foto de Mariana Hernández"
-            class="header__cv-foto"
-          />
-          <div class="header__cv-circle"></div>
-        </div>
-      </section>
-      <h2 class="header__skills-title">Habilidades y herramientas</h2>
-      <div class="header__cv-skills">
-        <div class="header__cv-skill">
-          <img
-            src="./images/html.png"
-            alt="Ícono de HTML"
-            class="header__cv-skill-icon"
-          />
-        </div>
-        <div class="header__cv-skill">
-          <img
-            src="./images/css.png"
-            alt="Ícono de CSS"
-            class="header__cv-skill-icon"
-          />
-        </div>
-        <div class="header__cv-skill">
-          <img
-            src="./images/js.png"
-            alt="Ícono de JavaScript"
-            class="header__cv-skill-icon"
-          />
-        </div>
-        <div class="header__cv-skill">
-          <img
-            src="./images/git.png"
-            alt="Ícono de Git"
-            class="header__cv-skill-icon"
-          />
-        </div>
-        <div class="header__cv-skill">
-          <img
-            src="./images/github.png"
-            alt="Ícono de GitHub"
-            class="header__cv-skill-icon"
-          />
-        </div>
-        <div class="header__cv-skill">
-          <img
-            src="./images/chatgpt.png"
-            alt="Ícono de ChatGPT"
-            class="header__cv-skill-icon"
-          />
-        </div>
-      </div>
-    </header>
-
-    <main class="main__cv">
-      <h2 class="main__cv-title">Proyectos destacados</h2>
-      <div class="main__cv-projects">
-        <section class="main__cv-project1">
-          <div class="main__cv-project1-image">
+        </section>
+        <h2 class="header__skills-title">Habilidades y herramientas</h2>
+        <div class="header__cv-skills">
+          <div class="header__cv-skill">
             <img
               src="./images/html.png"
-              alt="logo html"
-              class="project1__logo"
+              alt="Ícono de HTML"
+              class="header__cv-skill-icon"
             />
-            <img src="./images/css.png" alt="logo css" class="project1__logo" />
           </div>
-          <div class="main__cv-project1-description">
-            <h2 class="main__projects-title">Página web de una cafetería</h2>
-            <p class="main__projects-text">
-              Desarrollo de una landing page responsiva para una cafetería
-              siguiendo un brief de diseño. Incluye estructura semántica,
-              maquetación con Flexbox, creación de secciones nuevas y un
-              formulario de contacto funcional. Logro: Implementé desde cero el
-              diseño completo de la página, organicé el proyecto con buenas
-              prácticas y publiqué la versión final utilizando GitHub Pages.
-            </p>
-            <a
-              href="https://github.com"
-              target="_blank"
-              class="main__projects-link"
-              ><img src="./images/demo-en-vivo.png" alt="demo en vivo"
-            /></a>
+          <div class="header__cv-skill">
             <img
-              src="./images/logo-github.png"
-              alt="logo github"
-              class="main__projects-github"
+              src="./images/css.png"
+              alt="Ícono de CSS"
+              class="header__cv-skill-icon"
             />
           </div>
-        </section>
+          <div class="header__cv-skill">
+            <img
+              src="./images/js.png"
+              alt="Ícono de JavaScript"
+              class="header__cv-skill-icon"
+            />
+          </div>
+          <div class="header__cv-skill">
+            <img
+              src="./images/git.png"
+              alt="Ícono de Git"
+              class="header__cv-skill-icon"
+            />
+          </div>
+          <div class="header__cv-skill">
+            <img
+              src="./images/github.png"
+              alt="Ícono de GitHub"
+              class="header__cv-skill-icon"
+            />
+          </div>
+          <div class="header__cv-skill">
+            <img
+              src="./images/chatgpt.png"
+              alt="Ícono de ChatGPT"
+              class="header__cv-skill-icon"
+            />
+          </div>
+        </div>
+      </header>
 
-        <section class="main__cv-project2">
-          <div class="main__cv-project2-image">
-            <img src="./images/js.png" alt="logo js" class="project2__logo" />
-            <img
-              src="./images/React.png"
-              alt="logo React"
-              class="project2__logo"
-            />
-          </div>
-          <div class="main__cv-project2-description">
-            <h2 class="main__projects-title">Mi proyecto</h2>
-            <p class="main__projects-text">Descripción del proyecto</p>
-            <a
-              href="https://github.com"
-              target="_blank"
-              class="main__projects-link"
-              ><img src="./images/demo-en-vivo.png" alt="demo en vivo"
-            /></a>
-            <img
-              src="./images/logo-github.png"
-              alt="logo github"
-              class="main__projects-github"
-            />
-          </div>
-        </section>
-      </div>
-    </main>
+      <main class="main__cv">
+        <h2 class="main__cv-title">Proyectos destacados</h2>
+        <div class="main__cv-projects">
+          <section class="main__cv-project1">
+            <div class="main__cv-project1-image">
+              <img
+                src="./images/html.png"
+                alt="logo html"
+                class="project1__logo"
+              />
+              <img
+                src="./images/css.png"
+                alt="logo css"
+                class="project1__logo"
+              />
+            </div>
+            <div class="main__cv-project1-description">
+              <h2 class="main__projects-title">Página web de una cafetería</h2>
+              <p class="main__projects-text">
+                Desarrollo de una landing page responsiva para una cafetería
+                siguiendo un brief de diseño. Incluye estructura semántica,
+                maquetación con Flexbox, creación de secciones nuevas y un
+                formulario de contacto funcional. Logro: Implementé desde cero
+                el diseño completo de la página, organicé el proyecto con buenas
+                prácticas y publiqué la versión final utilizando GitHub Pages.
+              </p>
+              <div class="main__cv-project1-links">
+               <a
+                href="https://github.com"
+                target="_blank"
+                class="main__cv-projects-link"
+                ><img src="./images/demo-en-vivo.png" alt="demo en vivo"
+               /></a>
+               <a
+                href="https://github.com"
+                target="_blank"
+                class="main__cv-projects-link"
+                ><img
+                  src="./images/logo-github.png"
+                  alt="logo github"></a>
+            </div>
+          </section>
 
-    <footer id="contact" class="footer__cv">
-      <h4 class="footer__cv-title">Contacto</h4>
-      <a href="mailto:student@tripleten.com" class="footer__cv-email"
-        >student@tripleten.com</a
-      >
-      <div class="footer__cv-social">
-        <a
-          href="https://www.linkedin.com/"
-          target="_blank"
-          class="footer__social-link"
-          ><img src="./images/linkedin.png" alt="LinkedIn"
-        /></a>
-        <a
-          href="https://www.facebook.com/"
-          target="_blank"
-          class="footer__social-link"
-          ><img src="./images/facebook negative.png" alt="Facebook"
-        /></a>
-        <a
-          href="https://www.instagram.com/"
-          target="_blank"
-          class="footer__social-link"
-          ><img src="./images/Instagram Negative.png" alt="Instagram"
-        /></a>
-        <a
-          href="https://www.twitter.com/"
-          target="_blank"
-          class="footer__social-link"
-          ><img src="./images/X Negative.png" alt="X"
-        /></a>
-      </div>
-      <div class="footer__cv-circle"></div>
-    </footer>
+          <section class="main__cv-project2">
+            <div class="main__cv-project2-image">
+              <img src="./images/js.png" alt="logo js" class="project2__logo" />
+              <img
+                src="./images/React.png"
+                alt="logo React"
+                class="project2__logo"
+              />
+            </div>
+            <div class="main__cv-project2-description">
+              <h2 class="main__projects-title">Mi proyecto</h2>
+              <p class="main__projects-text">Descripción del proyecto</p>
+              <div class="main__cv-project2-links">
+               <a
+                href="https://github.com"
+                target="_blank"
+                class="main__cv-projects-link"
+                ><img src="./images/demo-en-vivo.png" alt="demo en vivo"
+               /></a>
+               <a
+                href="https://github.com"
+                target="_blank"
+                class="main__cv-projects-link"
+                ><img
+                  src="./images/logo-github.png"
+                  alt="logo github"></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer id="contact" class="footer__cv">
+        <h4 class="footer__cv-title">Contacto</h4>
+        <a href="mailto:student@tripleten.com" class="footer__cv-email"
+          >student@tripleten.com</a
+        >
+        <div class="footer__cv-social">
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            class="footer__social-link"
+            ><img src="./images/linkedin.png" alt="LinkedIn"
+          /></a>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            class="footer__social-link"
+            ><img src="./images/facebook negative.png" alt="Facebook"
+          /></a>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="footer__social-link"
+            ><img src="./images/Instagram Negative.png" alt="Instagram"
+          /></a>
+          <a
+            href="https://www.twitter.com/"
+            target="_blank"
+            class="footer__social-link"
+            ><img src="./images/X Negative.png" alt="X"
+          /></a>
+        </div>
+        <div class="footer__cv-circle"></div>
+      </footer>
+    </div>
   </body>
 </html>
